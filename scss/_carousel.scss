@@ -1,0 +1,94 @@
+// --------------------------------------------------
+// Carousel
+// --------------------------------------------------
+.carousel {}
+
+.carousel-content {
+    min-height: 33.5rem;
+    margin-bottom: 5rem;
+    overflow: hidden;
+}
+
+.carousel-content .slide {
+    max-width: 75rem;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+    display: none;
+}
+
+.carousel-content .outgoing {
+    display: inline-block;
+}
+
+.carousel-content .from-left {
+    transform: translateX(-75rem);
+    display: inline-block;
+}
+
+.carousel-content .from-right {
+    transform: translateX(75rem);
+    display: inline-block;
+}
+
+.carousel-content .active {
+    opacity: 1;
+    display: inline-block;
+}
+
+.carousel-content .quote {
+    margin-bottom: 5rem;
+}
+
+.carousel-content .quote-author {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-content .quote-author img {
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 50%;
+    margin-right: 2.5rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.carousel-content .quote-author .author-name {
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.carousel-indicators ol {
+    height: 2rem; //1.5rem; ?
+    padding: 0;
+    margin: 0;
+    li {
+        height: 1.5rem;
+        width: 1.5rem;
+        background-color: $white;
+        border-radius: 50%;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        vertical-align: middle; //?
+        display: inline-block;
+        //cursor: pointer;
+        transition: all 0.8s linear;
+    }
+    .active {
+        height: 2rem;
+        width: 2rem;
+        background-color: $prime;
+    }
+}
+
+// --------------------------------------------------
+// Media levels
+// --------------------------------------------------
+// -sm- 
+// -------------------------
+@media (min-width: 768px) {
+    .carousel-content {
+        min-height: 24.5rem;
+    }
+}

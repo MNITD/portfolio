@@ -1,0 +1,85 @@
+// --------------------------------------------------
+// Global
+// --------------------------------------------------
+@import "core";
+//Content
+// --------------------------------------------------
+header {
+    height: $headerHeight;
+    background-color: transparent;
+    padding: $headerPadding;
+}
+
+
+/*.hero {
+	background: $gray; // TODO:temporary, change according design
+}*/
+
+section {
+    min-height: 40rem; // TODO:temporary, change according design
+}
+
+// --------------------------------------------------
+// Media levels
+// --------------------------------------------------
+// -xs-
+// -------------------------
+.collapse {
+    display: none;
+}
+
+// -sm- 
+// -------------------------
+@media (min-width: 768px) {
+    .text-left-sm {
+        text-align: left;
+    }
+    .text-right-sm {
+        text-align: right;
+    }
+    footer .social {
+        margin: 0 1.5rem;
+    }
+    .block-sm {
+        display: block;
+    }
+    .inline-block-sm {
+        display: inline-block;
+    }
+}
+
+// -md-
+// --------------------------
+@media (min-width: 992px) {
+    .block-md {
+        display: block;
+    }
+    .inline-block-md {
+        display: inline-block;
+    }
+    #section-contact form {
+        margin-left: 3rem;
+    }
+    #section-work .project {
+        .project-info,
+        .project-mask {
+            opacity: 0;
+            transition: all 0.2s linear;
+        }
+        &:hover {
+            .project-mask {
+                opacity: 0.88;
+            }
+            .project-info {
+                opacity: 1;
+            }
+        }
+    }
+    .humburger-menu{
+        display:none;
+    }
+}
+
+// -lg-
+// --------------------------
+@media (min-width: 1200px) {}

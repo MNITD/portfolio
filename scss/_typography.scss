@@ -1,0 +1,242 @@
+// --------------------------------------------------
+// TM Typography
+// --------------------------------------------------
+// Body reset
+// --------------------------------------------------
+html {
+    font-size: 10px; // static
+    //font-family: sans-serif;
+}
+
+body {
+    color: $colorText;
+    margin: 0;
+}
+
+// Links
+// -------------------------
+a,
+.link {
+    font-size: 1.4rem;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: $colorLink;
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
+
+.navbar a {
+    color: $gray;
+    text-transform: uppercase;
+    margin: $navbarLinkMargin;
+     //vertical-align: middle; //?
+     //display: block;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+    &:hover {
+        color: $white;
+    }
+}
+
+.navbar #active {
+    color: $white; //$blackHaze;
+    border-bottom: 2px solid $green;
+    padding-bottom: 1rem;
+}
+
+#section-about a {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 4rem;
+    &:focus {
+        color: $yellow;
+        text-decoration: none;
+    }
+    &.readmore {
+        font-size: 1.8rem;
+        text-transform: none;
+        text-decoration: underline;
+    }
+}
+
+// Images
+// -------------------------
+img {
+    vertical-align: middle;
+}
+
+// Typography
+// --------------------------------------------------
+// Body text
+// -------------------------
+p {
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+    color: $colorText;
+    margin: 0;
+}
+
+#section-contact p{
+    margin-bottom: 4rem;
+}
+
+#section-services p {
+    margin-bottom: 5rem;
+}
+
+#section-about p {
+    margin-bottom: 4rem;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+// Headings
+// -------------------------
+h1,
+h2,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $colorText;
+}
+
+h1 {
+    font-size: 4.8rem;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+}
+
+h2 {
+    font-size: 3.6rem;
+    font-family: 'Merriweather', serif;
+    margin: 0 0 3rem 0;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+}
+
+h4 {
+    font-size: 2.2rem;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+}
+
+h5 {
+    font-size: 1.4rem;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 0 10rem 0;
+}
+
+h6 {
+    font-size: 1.4rem;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+}
+
+.quote {
+    font-size: 2.2rem;
+    color: $colorText;
+}
+
+.small-text {
+    font-size: 1.6rem; //1.6rem
+}
+#section-contact h1{
+    margin-bottom: 5rem;
+}
+
+.name-container h3{
+    display:inline-block;
+}
+
+#section-header-jumbotron h1 {
+    margin: $headerJumbotronMarginH1;
+}
+
+#section-header-jumbotron h5 {
+    margin: 0;
+}
+
+#section-services h3 {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+#section-about h3 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+#section-work h4 {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+#section-clients h5 {
+    margin-bottom: 5rem;
+}
+
+#section-get-in-touch h1 {
+    margin-bottom: 4rem;
+}
+
+#section-get-in-touch h5 {
+    margin-bottom: 5rem;
+}
+
+footer h5 {
+    margin-top: 0;
+    margin-bottom: 5rem;
+}
+
+// Inputs
+// -------------------------
+
+textarea{
+    width:100%;
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+    color: $colorText;
+    border: none;
+    border-radius: 2%;
+    padding: 1.5rem; 
+    margin: 0 0 1.5rem 0;
+    
+    overflow: hidden;
+    resize: none;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    //display: block;
+}
+
+#section-contact .client-name{
+   height: 5rem;
+//    /line-height:5rem;
+}
+#section-contact .client-email{
+    height: 5rem;
+}
+
+#section-contact .client-message{
+    height: 19rem;
+    margin-bottom:5rem;
+    overflow-y:auto;
+    
+    //overflow: auto;
+    //outline: none;
+      //box-shadow: none;
+    
+    //line-height:19rem;
+}

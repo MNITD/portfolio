@@ -1,0 +1,247 @@
+// --------------------------------------------------
+// Helper classes
+// --------------------------------------------------
+
+// Other
+// -------------------------
+
+.circle{
+    border-radius: 50%;
+}
+
+// Position
+// -------------------------
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.fixed {
+	position: fixed;
+}
+
+// Z-index register
+
+.z-1 {
+	z-index: 1;
+}
+
+.z-2 {
+	z-index: 2;
+}
+
+.z-3 {
+	z-index: 3;
+}
+
+.z-4 {
+	z-index: 4;
+}
+
+.z-5 {
+	z-index: 5;
+}
+
+// Floated Elements
+// -------------------------
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.cf {
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+// Display Values
+// -------------------------
+
+.inline {
+	display: inline;
+}
+
+.block {
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+// Typography
+// -------------------------
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+// Aligning Elements
+// -------------------------
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+// Spacing
+// -------------------------
+
+.letter-spacing{
+    letter-spacing: 0.2rem;
+}
+
+// Images
+// -------------------------
+
+.avatar{
+    height: 14rem;
+    width: 14rem;
+}
+#section-contact .img-cross{
+    margin: 1rem;
+    cursor: pointer;
+    transform: scale(1);
+    &:hover{
+        opacity: 0.9;
+        transform: scale(1.1);
+    }
+}
+#section-services img{
+    height:16.6rem;
+    width: 16.6rem;
+}
+#section-work .project img{
+    height: inherit;
+    width: inherit;
+    //border-radius: 2%;
+    transition: all 0.4s linear;
+}
+
+footer .social{
+    height: 7rem;
+    width: 7rem;
+    border: 1px solid $corduroy;
+    margin: 2rem 1.5rem 0 1.5rem;
+}
+
+// Border radius
+// -------------------------
+
+// Colors
+// -------------------------
+
+.white {
+	&.white {
+		color: $white;
+	}
+}
+
+.gray{
+    &.gray{
+        color: $gray;
+    }
+}
+.corduroy{
+    &.corduroy{
+        color: $corduroy;
+    }
+}
+
+.black {
+	&.black {
+		color: $black;
+	}
+}
+
+.prime {
+	&.prime {
+		color: $prime;
+	}
+}
+
+.second {
+	&.second {
+		color: $second;
+	}
+}
+
+.third {
+	&.third {
+		color: $third;
+	}
+}
+
+// Background Colors
+// -------------------------
+
+.bg-white {
+	&.bg-white {
+		background-color: #fff;
+	}
+}
+
+.bg-dark-gray {
+	&.bg-dark-gray {
+		background-color: $darkGray;
+	}
+}
+
+.bg-prime {
+	&.bg-prime {
+		background-color: $prime;
+	}
+}
+
+.bg-second {
+	&.bg-second {
+		background-color: $second;
+	}
+}
+
+.bg-third {
+	&.bg-third {
+		background-color: $third;
+	}
+}
+
+.bg-gray {
+	&.bg-gray {
+		background-color: $pampas;
+	}
+}
+
+// Visibility
+// -------------------------
+
+// Cursor
+// -------------------------
+
+.pointer {
+	cursor: pointer;
+}
+

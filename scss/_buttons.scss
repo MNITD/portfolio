@@ -1,0 +1,145 @@
+// --------------------------------------------------
+// Buttons
+// --------------------------------------------------
+
+// Button global
+// -------------------------
+
+// main button
+
+.btn {
+    width: auto;
+    font-size: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: $white;
+    text-transform: uppercase;
+    border-radius: $bntRadius;
+    text-align: center;
+    display: inline-block;
+    padding: 2.5rem 6rem;
+    margin: 1.5rem;
+    &:focus,
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+// button color skins
+// -------------------------
+
+.btn-prime {
+    border: 2px solid $prime;
+    background: $prime;
+    &:focus,
+    &:hover {
+        border-color: darken($prime, 5%);
+        background-color: darken($prime, 5%);
+    }
+}
+
+.btn-second {
+    border: 2px solid $second;
+    background: $third;
+    &:focus,
+    &:hover {
+        border-color: darken($second, 5%);
+        background-color: darken($second, 5%);
+    }
+}
+
+.btn-third {
+    border: 2px solid $third;
+    background: $third;
+    &:focus,
+    &:hover {
+        border-color: darken($third, 5%);
+        background-color: darken($third, 5%);
+    }
+}
+
+.btn-prime-outline {
+    border: 2px solid $prime;
+    color: $prime;
+    background: transparent;
+    &:focus,
+    &:hover {
+        background-color: $prime;
+        color: $white;
+    }
+}
+
+.btn-white-outline {
+    //height:$btnHeight;
+    border: 2px solid $white;
+    background: transparent;
+    &:focus,
+    &:hover {
+        background-color: $white;
+        color: $colorText;
+    }
+}
+
+// button size skins
+// -------------------------
+
+/*.btn-large {
+	padding: 2.5rem 6rem;
+	font-size: 2.5rem;
+}*/
+
+
+.btn-small {
+	font-size: 1.4rem;
+    padding: 2rem 4.5rem;
+    margin:0 1.5rem;
+}
+
+// buttons in sections
+// -------------------------
+#section-contact .btn-submit{
+    width:10.3rem;
+    margin: 0;
+}
+#section-services .btn-mrg-btm{
+    margin-bottom: 10rem;
+}
+#section-work .btn-more-projects{ /* stupid class only for the one specific button (facepalm) */
+    margin-top: 2rem;
+}
+
+// --------------------------------------------------
+// Media levels
+// --------------------------------------------------
+
+// -xs- (Default)
+// -------------------------
+
+// -sm- 
+// -------------------------
+
+@media (min-width: 768px) {
+    .btn {
+        font-size: 1.4rem;
+        padding: 2rem 4.5rem;
+        margin:0 1.5rem;
+    }
+    .btn-small {
+	    padding: 1rem 2.5rem;
+	    text-transform: uppercase;
+	    font-size: 1rem;
+    }
+}
+
+// -md-
+// -------------------------
+
+@media (min-width: 992px) {
+    #section-services .btn-mrg-btm{
+         margin:0 1.5rem;
+    }
+}
+
+// -lg-
+// -------------------------

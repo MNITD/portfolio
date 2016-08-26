@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bogdan K. - Portfolio site</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!--<link rel="icon" href="./img/favicon.ico" type="image/x-icon">-->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <section id="section-contact" class="bg-dark-gray z-1">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xs-9 col-md-left-2 col-md-3">
+                    <h1 class="white">Contact Me</h1>
+                </div>
+                <div class="col col-xs-3 col-md-5 col-md-right-2 text-right">
+                    <img class="img-cross" src="./img/cross-white-24-20.png" alt="cross" onclick="closeContactForm();" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-left-2 col-md-3">
+                    <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic itaque, doloribus iste.</p>
+                    <p class="gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero at quae possimus praesentium consequatur labore facilis odit, dicta eius impedit maiores, ipsum minima reiciendis libero asperiores! Rem possimus, ut deserunt.</p>
+                </div>
+                <div class="col col-md-5">
+                    <form name="contactForm">
+                        <textarea class="client-name" maxlength="25" placeholder="Your name"></textarea>
+                        <textarea class="client-email" maxlength="40" placeholder="Your email adress"></textarea>
+                        <textarea class="client-message" maxlength="300" placeholder="Your message"></textarea>
+                        <div class="btn btn-third btn-submit" onclick="submitForm();">Submit</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-header-jumbotron">
+        <header>
+            <div class="name-container inline-block">
+                <h3 class="white">Bogdan Freelancer</h3>
+            </div>
+            <!--
+                    <div class="navbar inline-block">
+                        <div class="humburger-menu">
+                            <div class="strip"></div>
+                            <div class="strip"></div>
+                            <div class="strip"></div>
+                        </div>
+                    </div>
+-->
+            <div class="navbar collapse inline-block-md">
+                <a id="active" href="#">Home</a>
+                <a href="#section-about">About</a>
+                <a href="#section-services">Services</a>
+                <a href="#">Blog</a>
+                <a href="#section-get-in-touch">Contact</a>
+
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <h5 class="prime uppercase letter-spacing collapse block-md">Web designer and developer</h5>
+                    <h1 class="white">My Name Is Bogdan.<br/>I Design Beautiful Websites.</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 text-center text-right-sm">
+                    <div class="btn btn-white-outline" onclick="">Learn More</div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 text-center text-left-sm">
+                    <div class="btn btn-third" onclick="makeContact();">Contact Me</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="section-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <h2>About Me</h2>
+                    <h5 class="prime uppercase letter-spacing collapse block-md">Web designer and developer</h5>
+                </div>
+            </div>
+            <dib class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                    <img class="avatar circle" src="img/avatar.jpg" alt="avatar" />
+                    <h3>Bogdan Freelancer</h3>
+                    <p class="italic small-text">Graphic Designer / Web Developer</p>
+                    <!--Front-end Developer / Web Designer<p>-->
+                    <a class="bold letter-spacing" href="https://linkedin.com/in/bogdan-kovalchuk-9843b8127" target="_blank">@bogdan_kovalchuk</a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <p class="bold"> Lipsum dolor sit amet, consectetur adipisicing elit. Vero impedit eveniet iusto aspernatur necessitatibus eaque, dolorum consequatur repellat facere ad.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores adipisci, in laboriosam omnis aliquid similique facere cupiditate consequuntur nobis illo ipsum veritatis a quo molestias?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptatum est voluptas voluptatibus dolore quidem eligendi iure adipisci facere tempore.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, obcaecati, in. Corporis provident qui consequuntur numquam nulla exercitationem explicabo, distinctio enim odio officia, incidunt, non!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sint, minus maiores a tempore perferendis quas. Provident, placeat maxime temporibus!</p>
+                    <a class="readmore" href="">Read more about me...</a>
+                </div>
+            </dib>
+        </div>
+    </section>
+
+    <section id="section-services" class="bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <h2>My Services</h2>
+                    <h5 class="prime uppercase letter-spacing collapse block-md">Web designer and developer</h5>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                        <img class="circle bg-prime" />
+                        <h3>Graphic Desight</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aliquam officiis, nostrum alias. Rerum, excepturi.</p>
+                        <div class="btn btn-prime-outline btn-mrg-btm">Learn more</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                        <img class="circle bg-prime" />
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aliquam officiis, nostrum alias. Rerum, excepturi.</p>
+                        <div class="btn btn-prime-outline btn-mrg-btm">Learn more</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                        <img class="circle bg-prime" />
+                        <h3>Research</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aliquam officiis, nostrum alias. Rerum, excepturi.</p>
+                        <div class="btn btn-prime-outline">Learn more</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-work">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <h2>My Work</h2>
+                    <h5 class="prime uppercase letter-spacing collapse block-md">Web designer and developer</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
+                    <div class="project">
+                        <img class="collapse inline-block-sm" src="./img/building.png" alt="project" />
+                        <div class="project-mask"></div>
+                        <div class="project-info">
+                            <h4 class="white">Intelligent Building</h4>
+                            <div class="btn btn-white-outline btn-small">See project</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
+                    <div class="project">
+                        <img class="collapse inline-block-sm" src="./img/canvas.png" alt="project" />
+                        <div class="project-mask"></div>
+                        <div class="project-info">
+                            <h4 class="white">JS canvas</h4>
+                            <div class="btn btn-white-outline btn-small">See project</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
+                    <div class="project">
+                        <img class="collapse inline-block-sm" src="./img/neuronet.png" alt="project" />
+                        <div class="project-mask"></div>
+                        <div class="project-info">
+                            <h4 class="white">NeuroNet</h4>
+                            <div class="btn btn-white-outline btn-small">See project</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
+                    <div class="project">
+                        <img class="collapse inline-block-sm" src="./img/qa.png" alt="project" />
+                        <div class="project-mask"></div>
+                        <div class="project-info">
+                            <h4 class="white">Questions Answers</h4>
+                            <div class="btn btn-white-outline btn-small">See project</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
+                    <div class="project">
+                        <img class="collapse inline-block-sm" src="./img/eventer.png" alt="project" />
+                        <div class="project-mask"></div>
+                        <div class="project-info">
+                            <h4 class="white">Eventer site</h4>
+                            <div class="btn btn-white-outline btn-small">See project</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
+                    <div class="project">
+                        <img class="collapse inline-block-sm" src="./img/portfolio.png" alt="project" />
+                        <div class="project-mask"></div>
+                        <div class="project-info">
+                            <h4 class="white">My Portfolio</h4>
+                            <div class="btn btn-white-outline btn-small">See project</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center collapse block-sm">
+                    <div class="project">
+                        <img class="bg-prime" />
+                        <div class="project-mask"></div>
+                        <div class="project-info">
+                            <h4 class="white">Your Project</h4>
+                            <div class="btn btn-white-outline btn-small" onclick="makeContact();">Contact me</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center collapse block-sm">
+                    <div class="project">
+                        <img class="bg-prime" />
+                        <div class="project-mask"></div>
+                        <div class="project-info">
+                            <h4 class="white">Your Project</h4>
+                            <div class="btn btn-white-outline btn-small" onclick="makeContact();">Contact me</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <div class="btn btn-prime-outline btn-more-projects">See More Projects</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-clients" class="bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 text-center">
+                    <h2>What My Cliens Say</h2>
+                    <h5 class="prime uppercase letter-spacing collapse block-md">Web designer and developer</h5>
+                    <div id="clients_carousel" class="carousel">
+                        <div class="carousel-content">
+                            <div id="0" class="slide active">
+                                <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis deleniti beatae architecto inventore blanditiis temporibus aspernatur officia atque quaerat facilis."</p>
+                                <div class="quote-author">
+                                    <img class="bg-third" />
+                                    <div class="author-name">
+                                        <h4>Andrey Snitsaruk</h4>
+                                        <p class="italic small-text">Android Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="1" class="slide">
+                                <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi id corrupti rerum. Quidem, soluta laboriosam nihil odio qui, placeat. Distinctio optio eum, nam. Magni cupiditate, eius vel blanditiis a nisi cum ipsa non aliquid sapiente."</p>
+                                <div class="quote-author">
+                                    <img class="bg-third" />
+                                    <div class="author-name">
+                                        <h4>Andrey Antonov</h4>
+                                        <p class="italic small-text">Android Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="2" class="slide">
+                                <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi id corrupti rerum. Quidem, soluta laboriosam nihil odio qui, placeat. Distinctio optio eum, nam. Magni cupiditate, eius vel blanditiis a nisi cum ipsa non aliquid sapiente."</p>
+                                <div class="quote-author">
+                                    <img class="bg-third" />
+                                    <div class="author-name">
+                                        <h4>Yaroslav Kovalchuk</h4>
+                                        <p class="italic small-text">CEO at Eventer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <ol>
+                                <li id="0" class="indicator active"></li>
+                                <li id="1" class="indicator"></li>
+                                <li id="2" class="indicator"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-get-in-touch">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <h1>Get In Touch</h1>
+                    <h5 class="gray uppercase letter-spacing collapse block-md">Web designer and developer</h5>
+                    <div class="btn btn-third" onclick="makeContact();">Contact Me</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <h5 class="corduroy">&copy; Copyright 2016 Bogdan's Website. All rights reserved.</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 text-center text-right-sm">
+                    <a href="#"><img class="social circle" src="./img/linked_in_social-64.png" /></a>
+                    <a href="#"><img class="social circle" src="./img/github_social-64.png" /></a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 text-center text-left-sm">
+                    <a href="#"><img class="social circle" src="./img/email_social-64.png" /></a>
+                    <a href="#"><img class="social circle" src="./img/rss_social-64.png" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!--    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>-->
+    <script src="js/all.js"></script>
+
+</body>
+
+</html>
