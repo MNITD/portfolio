@@ -1,0 +1,7 @@
+css
+js
+*.css
+.sass-cache
+.idea
+node_modules
+
