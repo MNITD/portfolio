@@ -1,114 +1,113 @@
 // --------------------------------------------------
 // Layout
 // --------------------------------------------------
-
 // Layout rules
 // -------------------------
 .container {
-	max-width: $mainContainer;
-	padding: $containerVerIndent $containerHorIndent;
-	margin: 0 auto;
+    max-width: $mainContainer;
+    padding: $containerVerIndent $containerHorIndent;
+    margin: 0 auto;
 }
-#section-contact{
+
+#section-contact {
     height: 100%;
     width: 100%;
     //padding: $contactPadding;
-    opacity:0.95;
+    opacity: 0.95;
     position: fixed;
     overflow: auto;
     display: none;
 }
-#section-contact form{
+
+#section-contact form {
     margin-left: 0rem;
 }
-#section-header-jumbotron{
+
+#section-header-jumbotron {
     min-height: $headerJumbotronHeight;
-    border-bottom:1rem solid $prime;   
-    margin:$headerJumbotronMargin;
+    border-bottom: 1rem solid $prime;
+    margin: $headerJumbotronMargin;
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-position: 50% 100%;
     background-size: cover;
 }
-.name-container{
-     //position: absolute;
-    //top: 50%;
-    //margin-top: -0.625em;
-    float:left;
-    //float: right;
-    height:$headerHeight;
-    line-height: $headerHeight;
 
+.name-container {
+    position: relative;
+    top: 50%;
+    margin-top: -0.625em;
+    //float: left; //
+    //height:$headerHeight;//
+    //line-height: $headerHeight;//
 }
 
-.navbar{
-    float: right;
-    height:$headerHeight;
-    line-height: $headerHeight;
+.navbar {
+    //height:$headerHeight;//
+    //line-height: $headerHeight;//
+    position: relative;
+    float: right; //
+    top: 50%;
+    margin-top: -0.625em;
 }
-.humburger-menu{
-    .strip{
-        height:0.2rem;
-        width:4rem;
+.navbar .navbar-container{
+    //display: inline-block;
+}
+
+.humburger-menu {
+    display: inline-block;
+    .strip {
+        height: 0.2rem;
+        width: 4rem;
         background-color: $white;
         margin: 0.8rem 0;
     }
-    &:hover{
+    &:hover {
         opacity: 0.8;
     }
 }
-#section-services{
-    
-}
-#section-about{
+
+#section-services {}
+
+#section-about {
     //border-top:1rem solid $prime;   
 }
-#section-work{
-    
-}
-#section-work .project{  
+
+#section-work {}
+
+#section-work .project {
     height: 18.8rem;
     width: 24.8rem;
     border: 6px solid $white;
     border-radius: 2%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 3rem; 
+    margin-bottom: 3rem;
     overflow: hidden;
-    
-    
     .project-mask,
-    .project-info{
-        height: 20rem;//18.8rem;
-        width: 26rem;//24.8rem;
+    .project-info {
+        height: 20rem; //18.8rem;
+        width: 26rem; //24.8rem;
         opacity: 1;
         margin-left: auto;
         margin-right: auto;
         position: absolute;
-        top: 0;//6px;
-        left: 0;//6px;
+        top: 0; //6px;
+        left: 0; //6px;
         right: 0;
     }
-
-    .project-mask{
+    .project-mask {
         background-color: $yellow;
     }
-    
-    &:hover{ 
-        img{
+    &:hover {
+        img {
             transform: scale(1.1);
         }
     }
-        
-}
-#section-clients{
-    
-}
-#section-get-in-touch{
-    
-}
-footer{
-    
 }
 
+#section-clients {}
 
+#section-get-in-touch {}
+
+footer {}

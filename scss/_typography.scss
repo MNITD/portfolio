@@ -156,9 +156,12 @@ h6 {
     margin-bottom: 5rem;
 }
 
-.name-container h3{
-    display:inline-block;
-}
+//.name-container h3{
+//    position: relative;
+//    top: 50%;
+//    margin-top: -0.625em;
+    //display:inline-block;
+//}
 
 #section-header-jumbotron h1 {
     margin: $headerJumbotronMarginH1;

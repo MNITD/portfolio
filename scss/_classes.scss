@@ -123,9 +123,10 @@
     width: 14rem;
 }
 #section-contact .img-cross{
+    height:4rem;
+    width:4rem;
     margin: 1rem;
     cursor: pointer;
-    transform: scale(1);
     &:hover{
         opacity: 0.9;
         transform: scale(1.1);
@@ -143,8 +144,8 @@
 }
 
 footer .social{
-    height: 7rem;
-    width: 7rem;
+    height: 6rem;
+    width: 6rem;
     border: 1px solid $corduroy;
     margin: 2rem 1.5rem 0 1.5rem;
 }
