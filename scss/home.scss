@@ -4,10 +4,15 @@
 @import "core";
 //Content
 // --------------------------------------------------
+/*html,
+body {
+    position: relative;
+}*/
+
 header {
-    height: $headerHeight;
+    height: $headerMobHeight;
     background-color: transparent;
-    padding: $headerPadding;
+    padding: $headerMobPadding;
 }
 
 
@@ -30,16 +35,7 @@ section {
 
 // -sm- 
 // -------------------------
-@media (min-width: 768px) {
-    .text-left-sm {
-        text-align: left;
-    }
-    .text-right-sm {
-        text-align: right;
-    }
-    footer .social {
-        margin: 0 1.5rem;
-    }
+@media only screen and (min-width: 768px) {
     .block-sm {
         display: block;
     }
@@ -50,15 +46,38 @@ section {
 
 // -md-
 // --------------------------
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 10px;
+    }
+    header {
+         height: $headerHeight;
+        padding: $headerPadding;
+    }
+    .container {
+        padding: $containerVerIndent $containerHorIndent;
+    }
     .block-md {
         display: block;
     }
     .inline-block-md {
         display: inline-block;
     }
+    .text-left-md {
+        text-align: left;
+    }
+    .text-right-md {
+        text-align: right;
+    }
+    #section-contact .img-cross {
+        height: 2rem;
+        width: 2rem;
+    }
     #section-contact form {
         margin-left: 3rem;
+    }
+    .humburger-menu {
+        display: none;
     }
     #section-work .project {
         .project-info,
@@ -75,15 +94,11 @@ section {
             }
         }
     }
-    .humburger-menu {
-        display: none;
-    }
-    #section-contact .img-cross {
-        height: 2rem;
-        width: 2rem;
+    footer .social {
+        margin: 0 1.5rem;
     }
 }
 
 // -lg-
 // --------------------------
-@media (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {}

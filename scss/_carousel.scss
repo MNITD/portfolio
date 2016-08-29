@@ -4,7 +4,7 @@
 .carousel {}
 
 .carousel-content {
-    min-height: 33.5rem;
+    min-height: 30.5rem;
     margin-bottom: 5rem;
     overflow: hidden;
 }
@@ -87,8 +87,11 @@
 // --------------------------------------------------
 // -sm- 
 // -------------------------
-@media (min-width: 768px) {
+
+// -md- 
+// -------------------------
+@media only screen and (min-width: 992px) {
     .carousel-content {
-        min-height: 24.5rem;
+        min-height: 19.5rem;
     }
 }

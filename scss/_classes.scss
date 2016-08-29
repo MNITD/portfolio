@@ -132,15 +132,20 @@
         transform: scale(1.1);
     }
 }
-#section-services img{
+#section-services .img{//#section-services img
     height:16.6rem;
     width: 16.6rem;
+    margin:0 auto;//
 }
 #section-work .project img{
     height: inherit;
     width: inherit;
     //border-radius: 2%;
     transition: all 0.4s linear;
+}
+#section-work .project .img{//#section-work .project img
+    height: inherit;
+    width: inherit;
 }
 
 footer .social{

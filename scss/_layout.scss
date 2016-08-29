@@ -3,9 +3,12 @@
 // --------------------------------------------------
 // Layout rules
 // -------------------------
+/*#ios-overflow-solution{
+    position: relative;
+}*/
 .container {
     max-width: $mainContainer;
-    padding: $containerVerIndent $containerHorIndent;
+    padding: $containerMobVerIndent $containerMobHorIndent;
     margin: 0 auto;
 }
 
@@ -57,10 +60,11 @@
 .humburger-menu {
     display: inline-block;
     .strip {
-        height: 0.2rem;
-        width: 4rem;
+        height: 0.25rem;
+        width: 3rem;
         background-color: $white;
-        margin: 0.8rem 0;
+        margin: 0.6rem 0;
+        position: relative;
     }
     &:hover {
         opacity: 0.8;
@@ -78,12 +82,14 @@
 #section-work .project {
     height: 18.8rem;
     width: 24.8rem;
-    border: 6px solid $white;
+    border: 0.5rem solid $white;
     border-radius: 2%;
+    //padding: 5px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
     overflow: hidden;
+    box-shadow: 0 0 0.1rem $gray;
     .project-mask,
     .project-info {
         height: 20rem; //18.8rem;

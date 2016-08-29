@@ -1,12 +1,9 @@
 // --------------------------------------------------
 // Buttons
 // --------------------------------------------------
-
 // Button global
 // -------------------------
-
 // main button
-
 .btn {
     width: auto;
     font-size: 2.5rem;
@@ -19,7 +16,7 @@
     text-align: center;
     display: inline-block;
     padding: 2.5rem 6rem;
-    margin: 1.5rem;
+    margin: 1.5rem 0;
     &:focus,
     &:hover {
         cursor: pointer;
@@ -28,7 +25,6 @@
 
 // button color skins
 // -------------------------
-
 .btn-prime {
     border: 2px solid $prime;
     background: $prime;
@@ -89,55 +85,63 @@
 	font-size: 2.5rem;
 }*/
 
-
 .btn-small {
-	font-size: 1.4rem;
+    font-size: 1.4rem;
     padding: 2rem 4.5rem;
-    margin:0 1.5rem;
+    margin: 0 1.5rem;
 }
 
 // buttons in sections
 // -------------------------
-#section-contact .btn-submit{
-    width:10.3rem;
+#section-contact .btn-submit {
+    width: 10.3rem;
     margin: 0;
 }
-#section-services .btn-mrg-btm{
+
+#section-services .btn-mrg-btm {
     margin-bottom: 10rem;
 }
-#section-work .btn-more-projects{ /* stupid class only for the one specific button (facepalm) */
+
+#section-work .btn-more-projects {
+    /* stupid class only for the one specific button (facepalm) */
     margin-top: 2rem;
 }
 
 // --------------------------------------------------
 // Media levels
 // --------------------------------------------------
-
 // -xs- (Default)
 // -------------------------
-
 // -sm- 
 // -------------------------
-
-@media (min-width: 768px) {
-    .btn {
+@media only screen and (min-width: 768px) {
+   /* .btn {
         font-size: 1.4rem;
         padding: 2rem 4.5rem;
-        margin:0 1.5rem;
+        margin: 0 1.5rem;
     }
     .btn-small {
-	    padding: 1rem 2.5rem;
-	    text-transform: uppercase;
-	    font-size: 1rem;
-    }
+        padding: 1rem 2.5rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }*/
 }
 
 // -md-
 // -------------------------
-
-@media (min-width: 992px) {
-    #section-services .btn-mrg-btm{
-         margin:0 1.5rem;
+@media only screen and (min-width: 992px) {
+    .btn {
+        font-size: 1.4rem;
+        padding: 2rem 4.5rem;
+        //margin: 0 1.5rem;
+    }
+    .btn-small {
+        padding: 1rem 2.5rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    #section-services .btn-mrg-btm {
+        margin: 0 1.5rem;
     }
 }
 

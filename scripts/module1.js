@@ -5,11 +5,13 @@ function scrollTo(className) {
 function makeContact() {
     "use strict";
     document.body.style.overflow = 'hidden';
+    //document.getElementById('ios-overflow-solution').style.overflow = 'hidden';
     document.getElementById('section-contact').style.display = "block";
 }
 function closeContactForm() {
     "use strict";
     document.body.style.overflow = '';
+    //document.getElementById('ios-overflow-solution').style.overflow = '';
     document.getElementById('section-contact').style.display = "none";
 }
 function submitForm() {
